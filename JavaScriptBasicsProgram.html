@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Program in JavaScript</title>
+<style>
+h1 {
+    text-align: center;
+}
+body {
+    background-image: url("https://www.background-pictures.com/wp-content/uploads/2021/07/clear-background-01-768x512.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 50px;
+}    
+
+.forp {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 25px 50px 75px 100px;
+    background-clip: padding-box;
+    background-color: whitesmoke;
+    border: 1px solid;
+    width: 750px;
+    height: 30px;
+    padding-inline-start: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+</style>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <center>
+    <p class="forp">Merry Christmas po Sir Vic</p>
+    <p class="forp">Enjoy Christmas and NewYear po</p>
+    <p class="forp">Thank you po.</p>
+    </center>
+    <script>
+        let str = "";
+        let firstname = prompt("Input Your firstname");
+        let lastname = prompt("Input Your lastname");
+        let address = prompt("Input Your address");
+        let age = prompt("Input Your Age");
+        age = parseInt(age);
+       
+        if (age >= 0 && age <= 1);
+        {str = " Infant ";} 
+        if (age >= 2 && age <= 4)
+        {str = " Toddler ";} 
+        if (age >= 5 && age <= 12)
+        {str = " Child ";} 
+        if (age >= 13 && age <= 19)
+        {str = " Teen ";} 
+        if (age >= 20 && age <= 39)
+        {str = " Adult ";} 
+        if (age >= 40 && age <= 59)
+        {str = " Middle Age Adult ";} 
+        if (age >= 60)
+        {str = " Senior ";}
+        alert("You are" + str + "Please Enter Okay");
+        document.getElementById("h1").innerHTML = "You are" + str;
+    </script>
+
+   
+</body>
+</html>
