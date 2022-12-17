@@ -18,14 +18,28 @@ body {
 }    
 
 .forp {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
     padding: 25px 50px 75px 100px;
     background-clip: padding-box;
     background-color: whitesmoke;
     border: 1px solid;
     width: 750px;
-    height: 30px;
+    height: 20px;
+    padding-inline-start: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.detailsInfo {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 25px 50px 75px 100px;
+    background-clip: padding-box;
+    background-color: whitesmoke;
+    border: 1px solid;
+    width: 750px;
+    height: 3px;
     padding-inline-start: 100px;
     text-align: center;
     border-radius: 20px;
@@ -35,6 +49,9 @@ body {
 <body>
     <h1 id="h1"></h1>
     <center>
+    <p id="yourName" class="detailsInfo"></p> 
+    <p id="address" class="detailsInfo"></p>  
+    <p id="yourAge" class="detailsInfo"></p>  
     <p class="forp">Merry Christmas po Sir Vic</p>
     <p class="forp">Enjoy Christmas and NewYear po</p>
     <p class="forp">Thank you po.</p>
@@ -63,8 +80,9 @@ body {
         {str = " Senior ";}
         alert("You are" + str + "Please Enter Okay");
         document.getElementById("h1").innerHTML = "You are" + str;
-    </script>
-
-   
+        document.getElementById("yourName").innerHTML = "Your name: " + firstname+ " " + lastname; 
+        document.getElementById("address").innerHTML = "Address: " + address;
+        document.getElementById("yourAge").innerHTML = "Age: " + age;
+        </script>
 </body>
 </html>
